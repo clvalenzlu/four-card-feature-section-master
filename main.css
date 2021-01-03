@@ -40,19 +40,19 @@ header h1,h2 {
     font-size: 35px;
 }
 
-header h1{
+header h1 {
     color: var(--very-dark);
     font-weight: 200;
     margin-bottom: 0;
 }
 
-header h2{
+header h2 {
     color: var(--very-dark);
     font-weight: 600;
     margin: 0 0;
 }
 
-header h3{
+header h3 {
     color: var(--grayish);
     font-size: 15px;
     font-weight: 400;
@@ -162,4 +162,46 @@ header h3{
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/*--Para responsivo mobile --*/
+
+@media all and (max-width: 768px) {
+
+    header h1,h2 {
+        font-size: 25px;
+    }
+
+    header h3 {
+        padding: 5px 35px;
+    }
+
+
+    .news-content-flex .article-center {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .news-content-flex .article-center .article-box-1, 
+    .news-content-flex .article-center .article-box-2, 
+    .news-content-flex .article-center .article-box-3, 
+    .news-content-flex .article-center .article-box-4 {
+        width: 342px;
+
+    }
+
+    .news-content-flex .article-center .article-box-1,
+    .news-content-flex .article-center .article-box-2,
+    .news-content-flex .article-center .article-box-3,
+    .news-content-flex .article-center .article-box-4 {
+        margin-top: 20px;
+    }
+
+    .news-content-flex .article-center .article-box-3,
+    .news-content-flex .article-center .article-box-4 {
+        margin-left: 0;
+    }
+
 }
