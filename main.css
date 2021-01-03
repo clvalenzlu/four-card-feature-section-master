@@ -32,30 +32,31 @@ html, body {
 }
 
 header {
-    margin-top: 30px;
+    margin-top: 70px;
     text-align: center;
 }
 
+header h1,h2 {
+    font-size: 35px;
+}
 
 header h1{
     color: var(--very-dark);
-    font-size: 25px;
     font-weight: 200;
     margin-bottom: 0;
 }
 
 header h2{
     color: var(--very-dark);
-    font-size: 25px;
     font-weight: 600;
     margin: 0 0;
 }
 
 header h3{
     color: var(--grayish);
-    font-size: 12px;
-    font-weight: 200;
-    padding: 5px 470px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 410px;
 }
 
 .news-content-flex .article-center {
@@ -70,66 +71,87 @@ header h3{
 .news-content-flex .article-center .article-box-2,
 .news-content-flex .article-center .article-box-3,
 .news-content-flex .article-center .article-box-4 {
-    border: 1px solid;
-}
-
-.news-content-flex .article-center .article-box-1,
-.news-content-flex .article-center .article-box-2,
-.news-content-flex .article-center .article-box-3,
-.news-content-flex .article-center .article-box-4 {
+    border-top: 4px solid;
+    border-radius: 5px;
     height: 250px;
     width: 610px;
+    background-color: #ffffff;
 }
 
 
 .news-content-flex .article-center .article-box-1 {
     margin-top: 150px;
     margin-right: 30px;
+    border-top-color: var(--secondary-color);
 
+}
+
+.news-content-flex .article-center .article-box-2 {
+    border-top-color: var(--primary-color);
 }
 
 
 .news-content-flex .article-center .article-box-3 {
     margin-top: 300px;
     margin-left: -340px;
+    border-top-color: var(--tertiary-color);
 }
 
 
 .news-content-flex .article-center .article-box-4 {
     margin-top: 150px;
     margin-left: 30px;
+    border-top-color: var(--cuartiary-color);
 }
 
+.news-content-flex .article-center .article-box-1 .article-box-1-image,
+.news-content-flex .article-center .article-box-2 .article-box-2-image,
+.news-content-flex .article-center .article-box-3 .article-box-3-image,
+.news-content-flex .article-center .article-box-4 .article-box-4-image  {
+    display: flex;
+    height: 65px;
+    width: 65px;
+    background-size: 100%;
+    margin-left: 250px;
+    margin-top: 75px;
+}
 
+.news-content-flex .article-center .article-box-1 .article-box-1-image {
+    background: url(./images/icon-supervisor.svg) no-repeat;
+}
 
+.news-content-flex .article-center .article-box-2 .article-box-2-image {
+    background: url(./images/icon-team-builder.svg) no-repeat;
+}
 
+.news-content-flex .article-center .article-box-3 .article-box-3-image {
+    background: url(./images/icon-karma.svg) no-repeat;
+}
 
+.news-content-flex .article-center .article-box-4 .article-box-4-image {
+    background: url(./images/icon-calculator.svg) no-repeat;
+}
 
+.article-center h2 {
+    color: var(--very-dark);
+    font-size: 20px;
+    text-align: start;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 0;
+    
+}
 
+.article-center h3 {
+    color: var(--grayish);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+    margin-left: -25px;
+    padding: 0px 45px;
+    margin-top: 10px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 .attribution { 
